@@ -1,30 +1,89 @@
-# React + TypeScript + Vite
+# GitHub Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Esta solução é baseada no curso Rocketseat - GitHub Desafio prático. 
 
-Currently, two official plugins are available:
+## Índice
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Visão geral](#visão-geral)
+   - [Captura de tela](#captura-de-tela)
+   - [Link](#link)
+- [Meu processo](#meu-processo)
+   - [Construído com](#construído-com)
+- [O que aprendi](#o-que-aprendi)
+   - [Funcionalidades Implementadas](#funcionalidades-implementadas)
+      - [Perfil do Usuário](#perfil-do-usuario)
+      - [Listagem e Filtro de Issues](#listagem-e-filtro-de-issues)
+      - [Página de Post Completo](#pagina-de-post-completo)
+   - [Conceitos Aplicados](#conceitos-aplicados)
+      - [Integração com API](#integração-com-api)
+      - [Roteamento Dinâmico](#roteamento-dinamico)
+      - [Formulários Gerenciados](#formularios-gerenciados)
+      - [Layout Responsivo](#layout-responsivo)
+- [Autor](#autor)
 
-## Expanding the ESLint configuration
+# Visão geral
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+GitHub Blog -  uma aplicação que utiliza a API do GitHub para buscar e exibir as issues de um repositório, transformando-as em um blog
 
-- Configure the top-level `parserOptions` property like this:
+### Captura de tela
+  <img  title="HomeImage" src="./src/assets/ImagemBlog.png" width="90%">
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Link
+
+- Solution URL: [GitHub](https://github.com/AIemao/githubBlog)
+
+## Meu processo
+
+### Construido com
+
+- [ReactJS](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [React Router DOM](https://reactrouter.com/en/main)
+- [Styled Components](https://styled-components.com/)
+- [Phosphor Icons](https://phosphoricons.com/)
+- [Date-Fns](https://www.npmjs.com/package/date-fns)
+- [Fontawesome](https://www.npmjs.com/package/@fortawesome/react-fontawesome)
+
+## O que aprendi
+
+### Funcionalidades Implementadas
+
+#### Perfil do Usuário:
+
+Exibição do perfil do usuário do GitHub, incluindo imagem, número de seguidores e outras informações relevantes.
+
+#### Listagem e Filtro de Issues:
+
+Listagem de todas as issues do repositório, permitindo filtrar por diferentes critérios.
+Resumo do conteúdo de cada issue para uma visualização rápida.
+
+
+#### Página de Post Completo:
+
+Criação de uma página dedicada para exibir o conteúdo completo de uma issue (post).
+Utilização de rotas dinâmicas para personalizar a visualização com base no número da issue.
+
+### Conceitos Aplicados
+
+#### Integração com API:
+
+Uso eficaz de Fetch/Axios para interagir com a API do GitHub.
+Implementação de chamadas à [GitHub Users API](https://docs.github.com/pt/rest/users/users?apiVersion=2022-11-28#get-a-user), [GitHub Search API](https://docs.github.com/pt/rest/search?apiVersion=2022-11-28) e [GitHub Issues API](https://docs.github.com/pt/rest/issues/issues?apiVersion=2022-11-28#get-an-issue).
+Consideração do limite de requisições da API do GitHub, com a opção de configurar uma chave privada para aumentar o limite.
+
+#### Roteamento Dinâmico:
+
+Aplicação de roteamento dinâmico com o [React Router](https://reactrouter.com/en/main), permitindo uma experiência de usuário fluida.
+
+#### Formulários Gerenciados:
+
+Utilização eficiente do [react-hook-form](https://react-hook-form.com/) para gerenciar formulários na aplicação.
+
+#### Layout Responsivo:
+
+Implementação do layout da aplicação conforme especificado no Figma, proporcionando uma experiência consistente em diferentes dispositivos.
+
+## Autor
+
+- Site - [Celio Junior](https://www.linkedin.com/in/celio-junior-152529193/)
